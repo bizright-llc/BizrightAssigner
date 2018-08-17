@@ -1,0 +1,72 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+
+        <ScrollView
+            android:id="@+id/scrollview"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/main_tv"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+        </ScrollView>
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <EditText
+        android:id="@+id/patchDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="2018-8-6"
+        android:inputType="textPersonName"
+        android:text="" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="pick_time"
+        android:onClick="showDatePickerDialog" />
+
+
+
+</LinearLayout>
+
+
+
+        <Button
+            android:id="@+id/patch"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onClick"
+            android:text="Patch Update"
+            android:textSize="30dp" />
+
+        <Button
+            android:id="@+id/start_bu1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onClick"
+            android:text="Scan"
+            android:textSize="30dp" />
+
+
+    </LinearLayout>
+
+
+</FrameLayout>

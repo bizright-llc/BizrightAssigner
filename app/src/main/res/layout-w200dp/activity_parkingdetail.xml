@@ -1,0 +1,46 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dip"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/table_title"
+            layout="@layout/my_list_item" />
+
+        <ListView
+            android:id="@+id/my_list"
+            android:layout_width="fill_parent"
+            android:layout_height="409dp"
+            android:cacheColorHint="@android:color/transparent"
+            android:divider="#f9b68b"
+            android:dividerHeight="1.0dip"
+            android:fadingEdge="none"
+            android:scrollbars="none"></ListView>
+
+
+
+        <!--<Button-->
+            <!--android:id="@+id/ClosedParkingPO"-->
+            <!--android:layout_width="104dp"-->
+            <!--android:layout_height="50dp"-->
+            <!--android:layout_marginLeft="200dp"-->
+            <!--android:background="@android:color/holo_orange_light"-->
+            <!--android:onClick="onClick"-->
+            <!--android:text="Parking"-->
+            <!--android:textSize="20dp" />-->
+
+    </LinearLayout>
+
+
+
+
+</FrameLayout>
